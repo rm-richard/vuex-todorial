@@ -41,9 +41,9 @@
       }
     },
     computed: {
-      ...mapState([
-        'skills'
-      ])
+      ...mapState({
+        skills: store => store.skillModule.skills
+      })
     },
     methods: {
       ...mapMutations([

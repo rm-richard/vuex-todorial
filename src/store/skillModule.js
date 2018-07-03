@@ -1,21 +1,17 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export default {
   state: {
-    aboutTitle: 'This is an about page',
     skills: [
       {skill: "Vue.js"},
       {skill: "Frontend developer"}
     ]
   },
+
   getters: {
     countSkills: state => {
       return state.skills.length
     }
   },
+
   mutations: {
     ADD_SKILL: (state, skill) => {
       state.skills.push(skill)
@@ -27,6 +23,7 @@ export default new Vuex.Store({
       state.skills = []
     }
   },
+
   actions: {
     removeSkill: (context, index) => {
       context.commit("REMOVE_SKILL", index)
@@ -40,4 +37,4 @@ export default new Vuex.Store({
       })
     }
   }
-})
+}

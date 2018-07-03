@@ -14,9 +14,9 @@ import { mapState, mapGetters } from 'vuex'
 export default {
   name: 'About',
   computed: {
-      ...mapState([
-        'aboutTitle',
-    ]),
+      ...mapState({
+        aboutTitle: store => store.aboutModule.title,
+    }),
       ...mapGetters([
         'countSkills'
     ])
