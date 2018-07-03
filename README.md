@@ -1,6 +1,6 @@
 # vue-wp-start
 
-> A Vue.js project
+> A Vuex tutorial project. Course: https://coursetro.com/courses/23/Vue-Tutorial-in-2018---Learn-Vue.js-by-Example
 
 ## Build Setup
 
